@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Spain Photobooth</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  </head>
+
+  <body class="spain-page">
+
+    <main class="app spain-app">
+
+      <p class="spain-small-title">
+        culture photobooth
+      </p>
+
+      <h1 class="spain-title">
+        🇪🇸 España
+      </h1>
+
+      <p class="subtitle">
+        ¡Hola! Ready for your photostrip?
+      </p>
+
+
+      <!-- CAMERA -->
+       <!-- TEMPLATE SELECTOR -->
+<div class="template-selector">
+  <label for="templateChoice">Choose Layout:</label>
+  <select id="templateChoice">
+    <option value="strip">Classic Photostrip 📸</option>
+    <option value="scrapbook">Scrapbook Postcard 💌</option>
+  </select>
+</div>
+
+      <div class="camera-container">
+
+        <div class="spain-decoration top-left">
+          🌹
+        </div>
+
+        <div class="spain-decoration top-right">
+          🪭
+        </div>
+
+        <video id="camera" autoplay playsinline></video>
+
+        <p id="countdown"></p>
+
+      </div>
+
+
+      <!-- TAKE PHOTOS -->
+
+      <button id="photoButton">
+        📸 Take Photostrip
+      </button>
+
+
+      <!-- PHOTO COUNTER -->
+
+      <p id="counter">
+        Photos: 0 / 4
+      </p>
+
+
+      <!-- FINAL PREVIEW -->
+
+      <div id="preview"></div>
+
+
+      <!-- BUTTONS -->
+
+      <div class="preview-buttons">
+
+        <button
+          id="downloadButton"
+          style="display: none;">
+          Download
+        </button>
+
+        <button
+          id="retakeButton"
+          style="display: none;">
+          Retake
+        </button>
+
+      </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
